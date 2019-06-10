@@ -434,3 +434,5 @@ man/% : docs/man/%.ronn
 man/%.html : docs/man/%.ronn
 	@mkdir -p man
 	$(RONN) $(RONN_EXTRA_ARGS) -5 --pipe < $^ > $@
+	
+	trouille
